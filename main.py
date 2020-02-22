@@ -11,7 +11,7 @@ class SettingDialog(QtWidgets.QDialog):
         self.ui.setupUi(self)
 
     def plane_text(self):
-        result = self.exec_()
+        result = self.exec()
         plane_text = self.ui.textEdit.toPlainText()
         return (plane_text, result == QtWidgets.QDialog.Accepted)
 
